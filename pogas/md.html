@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multiplication and division</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+    </head>
+    <body onload="rndMD()">
+        <style>body {background-image: url('/background.jpg');}</style>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">Uzdevumu ceļvedis</a>
+            </div>
+        </nav>
+
+        <div id="center" class="container-fluid d-flex align-items-center justify-content-center">
+            <div class="row" style="width: 300px; text-align: center;">
+                <div class="col">
+                    <p id="first"></p>
+                </div>
+                <div class="col">
+                    <p id="plus">+</p>
+                </div>
+                <div class="col">
+                    <p id="second"></p>
+                </div>
+                <div class="col">
+                    <p> = </p>
+                </div>
+            </div>
+            <div id="input" class="text-center">
+                <input id="result" type="text" placeholder="...">
+            </div>
+            <button id="answer" onclick="checkresult()">Atbildēt</button>
+        </div>
+        <br>
+        <div id="board" class="card" style="max-width: 18rem;">
+            <div class="card-body">
+              <p id="end" class="card-text text-center"></p>
+            </div>
+        </div>
+        <script src="/script.js"></script>
+    </body>
+</html>
