@@ -27,9 +27,9 @@ function rndMD() {
 }
 function checkresultMD(){
     let result = document.getElementById("result").value
-    if (result == rand_num1 + rand_num2){
+    if (result == rand_num1 * rand_num2){
         document.getElementById("end").innerHTML = "Malacis!"
-    }else if (result != rand_num1 + rand_num2) {
+    }else if (result != rand_num1 * rand_num2) {
         document.getElementById("end").innerHTML = "Nepareizi vai atbiles lauks ir tukšs."
     }
 }

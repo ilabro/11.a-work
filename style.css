@@ -49,6 +49,10 @@ button:hover {
   width: 20%;
 }
 
+#mult {
+  width: 20%;
+}
+
 #result{
   width: 70%;
 }
