@@ -7,14 +7,14 @@ function rndPM() {
     let rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
     document.getElementById("first").innerHTML = rand_num1;
     document.getElementById("second").innerHTML = rand_num2;
-    document.getElementById("plus").innerHTML = rand_element;
+    document.getElementById("char").innerHTML = rand_element;
 }
 function checkresultPM(){
     let result = document.getElementById("result").value;
     let char = document.getElementById("plus").value;
     if (char == "+"){
         if (result == rand_num1 + rand_num2){
-            document.getElementById("end").innerHTML = "Malacis!";
+            document.getElementById("end").innerHTML = "Malacis, pareizi!";
         }else if (result != rand_num1 + rand_num2) {
             document.getElementById("end").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
         }
