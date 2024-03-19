@@ -1,10 +1,13 @@
 function rndPM() {
     const min = Math.ceil(1);
     const max = Math.floor(100);
-    rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
-    rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
+    const myArray = ['+', '-'];
+    const rand_element = myArray[Math.floor(Math.random() * myArray.length)]; 
+    let rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
+    let rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
     document.getElementById("first").innerHTML = rand_num1;
     document.getElementById("second").innerHTML = rand_num2;
+    document.getElementById("plus").innerHTML = rand_element;
 }
 function checkresultPM(){
     let result = document.getElementById("result").value
