@@ -10,11 +10,19 @@ function rndPM() {
     document.getElementById("plus").innerHTML = rand_element;
 }
 function checkresultPM(){
-    let result = document.getElementById("result").value
-    if (result == rand_num1 + rand_num2){
-        document.getElementById("end").innerHTML = "Malacis!"
-    }else if (result != rand_num1 + rand_num2) {
-        document.getElementById("end").innerHTML = "Nepareizi vai atbiles lauks ir tukšs."
+    let result = document.getElementById("result").value;
+    let char = document.getElementById("plus").value;
+    if (char == "+"){
+        if (result == rand_num1 + rand_num2){
+            document.getElementById("end").innerHTML = "Malacis!";
+        }else if (result != rand_num1 + rand_num2) {
+            document.getElementById("end").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
+        }
+    }else if (char == "-"){
+        if (result == rand_num1 - rand_num2){
+            document.getElementById("end").innerHTML = "Malacis, pareizi!";
+        }else if (result != rand_num1 - rand_num2) {
+            document.getElementById("end").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
     }
 }
 
