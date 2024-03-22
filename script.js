@@ -8,7 +8,7 @@ function rndPM() {
     let rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
     document.getElementById("first").innerHTML = rand_num1;
     document.getElementById("second").innerHTML = rand_num2;
-    document.getElementById("+-").innerHTML = randomString;
+    document.getElementById("char").innerHTML = randomString;
  
     }
 function checkresultPM(){
