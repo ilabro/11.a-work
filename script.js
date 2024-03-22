@@ -1,14 +1,15 @@
 function rndPM() {
     const min = Math.ceil(1);
     const max = Math.floor(100);
+    let strings = ['+', '-'];
+    let randomIndex = Math.floor(Math.random() * strings.length);
+    let randomString = strings[randomIndex];
     let rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
     let rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
     document.getElementById("first").innerHTML = rand_num1;
     document.getElementById("second").innerHTML = rand_num2;
-    const rand_element = ['+', '-'];
-    const iterator = rand_element. values();
-    for (const value of iterator) {
-        document.getElementById("char").innerHTML = rand_element;
+    document.getElementById("+-").innerHTML = randomString;
+ 
     }
 function checkresultPM(){
     let result = document.getElementById("result").value;
