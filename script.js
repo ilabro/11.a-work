@@ -2,13 +2,18 @@ function rndPM() {
     const min = Math.ceil(1);
     const max = Math.floor(100);
     let strings = ['+', '-'];
-    let randomIndex = Math.floor(Math.random() * strings.length);
-    let randomString = strings[randomIndex];
+    if (Math.random()> 0.5){
+        document.getElementById("char").innerHTML = "+";
+    }else{
+        document.getElementById("char").innerHTML = "-";
+    }
+    // let randomIndex = Math.floor(Math.random() * strings.length);
+    // let randomString = strings[randomIndex];
     let rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
     let rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
     document.getElementById("first").innerHTML = rand_num1;
     document.getElementById("second").innerHTML = rand_num2;
-    document.getElementById("char").innerHTML = randomString;
+    // document.getElementById("char").innerHTML = randomString;
  
     }
 function checkresultPM(){
