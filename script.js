@@ -20,15 +20,15 @@ function checkresultPM(){
     var char = document.getElementById("char").innerHTML;
     console.log(char)
     if (char == "+"){
-        if (result == (rand_num1 + rand_num2)){
+        if (result == rand_num1 + rand_num2){
             document.getElementById("board").innerHTML = "Malacis, pareizi!";
-        }else if (result != (rand_num1 + rand_num2)) {
+        }else if (result != rand_num1 + rand_num2){
             document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
         }
     }else if (char == "-"){
-        if (result == (rand_num1 - rand_num2)){
+        if (result == rand_num1 - rand_num2){
             document.getElementById("board").innerHTML = "Malacis, pareizi!";
-        }else if (result != (rand_num1 - rand_num2)) {
+        }else if (result != rand_num1 - rand_num2){
             document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
         }
     }
