@@ -1,6 +1,6 @@
 function rndPM() {
-    const min = Math.ceil(1);
-    const max = Math.floor(100);
+    const min = 1;
+    const max = 100;
     var strings = ['+', '-'];
     if (Math.random()> 0.5){
         document.getElementById("char").innerHTML = "+";
