@@ -31,6 +31,7 @@ function checkresultPM(){
             document.getElementById("end").innerHTML = "Malacis, pareizi!";
         }else if (result != rand_num1 - rand_num2) {
             document.getElementById("end").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
+        }
     }
 }
 
