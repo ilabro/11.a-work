@@ -17,7 +17,7 @@ function rndPM() {
     }
 function checkresultPM(){
     let result = document.getElementById("result").value;
-    let char = document.getElementById("char").value;
+    let char = document.getElementById("char").innerHTML;
     console.log(char)
     if (char == "+"){
         if (result == (rand_num1 + rand_num2)){
