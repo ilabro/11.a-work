@@ -11,7 +11,7 @@ function rndPM() {
     }
     document.getElementById("first").innerHTML = rand_num1;
     document.getElementById("second").innerHTML = rand_num2;
-    }
+}
 
 function checkresultPM(){
     var result = document.getElementById("result").value;
@@ -43,7 +43,7 @@ function rndMD() {
     document.getElementById("first").innerHTML = rand_num1;
     document.getElementById("second").innerHTML = rand_num2;
     }
-}
+
 
 function checkresultMD(){
     var result = document.getElementById("result").value;
