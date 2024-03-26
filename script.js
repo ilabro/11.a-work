@@ -23,7 +23,7 @@ function checkresultPM(){
         }else if (result != rand_num1 + rand_num2){
             let incorrect_count = 0
             document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
-            document.getElementById("incorrect_count").value += 1;
+            document.getElementById("count").innetHTML = incorrect_count += 1;
         }
     }else if (char == "-"){
         if (result == rand_num1 - rand_num2){
