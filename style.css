@@ -74,3 +74,13 @@ button:hover {
   text-align: center;
 }
 
+#board_two {
+  height: 100px;
+  width: 200px;
+  background-color: gray;
+  color: white;
+  font-size: 35px;
+  font-family: Arial;
+  margin-left: 50%;
+  text-align: center;
+}
