@@ -1,3 +1,5 @@
+const max = 100
+const min = 1
 var rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
 var rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
 function rndPM() {
