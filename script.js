@@ -29,7 +29,9 @@ function checkresultPM(){
         if (result == rand_num1 - rand_num2){
             document.getElementById("board").innerHTML = "Malacis, pareizi!";
         }else if (result != rand_num1 - rand_num2){
+            let incorrect_count = 0
             document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
+            document.getElementById("count").innetHTML = incorrect_count += 1;
         }
     }
 }
