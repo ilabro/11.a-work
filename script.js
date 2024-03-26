@@ -1,7 +1,6 @@
+var rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
+var rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
 function rndPM() {
-    const min = 1;
-    const max = 100;
-    var strings = ['+', '-'];
     if (Math.random()> 0.5){
         document.getElementById("char").innerHTML = "+";
     }else{
@@ -9,11 +8,9 @@ function rndPM() {
     }
     // let randomIndex = Math.floor(Math.random() * strings.length);
     // let randomString = strings[randomIndex];
-    var rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
-    var rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
+   
     document.getElementById("first").innerHTML = rand_num1;
     document.getElementById("second").innerHTML = rand_num2;
-    
     }
 function checkresultPM(){
     var result = document.getElementById("result").value;
