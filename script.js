@@ -16,22 +16,27 @@ function rndPM() {
 function checkresultPM(){
     var result = document.getElementById("result").value;
     var char = document.getElementById("char").innerHTML;
-    console.log(char)
+    var count = 0
     if (char == "+"){
         if (result == rand_num1 + rand_num2){
             document.getElementById("board").innerHTML = "Malacis, pareizi!";
+            count += 1
+            document.getElementById("count").innetHTML = count;
         }else if (result != rand_num1 + rand_num2){
-            let incorrect_count = 0
             document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
-            document.getElementById("count").innetHTML = incorrect_count += 1;
+            count += 1
+            document.getElementById("count").innetHTML = count;
         }
     }else if (char == "-"){
         if (result == rand_num1 - rand_num2){
             document.getElementById("board").innerHTML = "Malacis, pareizi!";
+            count += 1
+            document.getElementById("count").innetHTML = count;
         }else if (result != rand_num1 - rand_num2){
             let incorrect_count = 0
             document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
-            document.getElementById("count").innetHTML = incorrect_count += 1;
+            count += 1
+            document.getElementById("count").innetHTML = count;
         }
     }
 }
@@ -52,18 +57,27 @@ function rndMD() {
 function checkresultMD(){
     var result = document.getElementById("result").value;
     var char = document.getElementById("char").innerHTML;
+    var count = 0
     console.log(char)
     if (char == "x"){
         if (result == rand_num1 * rand_num2){
             document.getElementById("board").innerHTML = "Malacis, pareizi!";
+            count += 1
+            document.getElementById("count").innetHTML = count;
         }else if (result != rand_num1 * rand_num2){
             document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
+            count += 1
+            document.getElementById("count").innetHTML = count;
         }
     }else if (char == "÷"){
         if (result == rand_num1 / rand_num2){
             document.getElementById("board").innerHTML = "Malacis, pareizi!";
+            count += 1
+            document.getElementById("count").innetHTML = count;
         }else if (result != rand_num1 / rand_num2){
             document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
+            count += 1
+            document.getElementById("count").innetHTML = count;
         }
     }
 }
