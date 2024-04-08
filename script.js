@@ -46,6 +46,10 @@ function checkresultPM(){
 }
 
 //----------------------------------------------------------------------------------------------->
+const max_one = 50;
+const min_one = 0;
+var rand_num_one = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
+var rand_num_two = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
 
 function rndMD() {
     if (Math.random()> 0.5){
@@ -53,8 +57,8 @@ function rndMD() {
     }else{
         document.getElementById("char").innerHTML = "÷";
     }
-    document.getElementById("first").innerHTML = rand_num1;
-    document.getElementById("second").innerHTML = rand_num2;
+    document.getElementById("first").innerHTML = rand_num_one;
+    document.getElementById("second").innerHTML = rand_num_two;
     }
 
 
