@@ -43,6 +43,7 @@ function checkresultPM(){
     }else {
                 document.getElementById("board").innerHTML = "Atbiles lauks ir tukšs.";
             }
+}
 
 //----------------------------------------------------------------------------------------------->
 
@@ -87,5 +88,6 @@ function checkresultMD(){
     }else {
             document.getElementById("board").innerHTML = "Atbiles lauks ir tukšs.";
     }
+}
 
    
