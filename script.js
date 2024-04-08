@@ -69,21 +69,21 @@ function checkresultMD(){
     console.log(char)
     if (result != ""){
         if (char == "x"){
-            if (result == rand_num1 * rand_num2){
+            if (result == rand_num_one * rand_num_two){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
                 count += 1
                 document.getElementById("count").innerHTML = count;
-            }else if (result != rand_num1 * rand_num2){
+            }else if (result != rand_num_one * rand_num_two){
                 document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
                 count += 1
                 document.getElementById("count").innerHTML = count;
             }
         }else if (char == "÷"){
-            if (result == rand_num1 / rand_num2){
+            if (result == rand_num_one / rand_num_two){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
                 count += 1
                 document.getElementById("count").innerHTML = count;
-            }else if (result != rand_num1 / rand_num2){
+            }else if (result != rand_num_one / rand_num_two){
                 document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs";
                 count += 1
                 document.getElementById("count").innerHTML = count;
