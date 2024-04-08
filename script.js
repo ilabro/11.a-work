@@ -84,8 +84,8 @@ function checkresultMD(){
                 document.getElementById("count").innetHTML = count;
             }
         }
-}else {
-        document.getElementById("board").innerHTML = "Atbiles lauks ir tukšs.";
-}
+    }else {
+            document.getElementById("board").innerHTML = "Atbiles lauks ir tukšs.";
+    }
 
    
