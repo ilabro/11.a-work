@@ -48,10 +48,14 @@ function checkresultPM(){
 //----------------------------------------------------------------------------------------------->
 const max_one = 50;
 const min_one = 0;
-var rand_num_one = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
-var rand_num_two = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
-
+function isfloat (n){
+    return n % 1 === 0;
+}
 function rndMD() {
+    var rand_num_one = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
+    var rand_num_two = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
+
+    while (rand_num_one * rand_num_two){
     if (Math.random()> 0.5){
         document.getElementById("char").innerHTML = "x";
     }else{
@@ -60,6 +64,7 @@ function rndMD() {
     document.getElementById("first").innerHTML = rand_num_one;
     document.getElementById("second").innerHTML = rand_num_two;
     }
+}
 
 
 function checkresultMD(){
