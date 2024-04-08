@@ -24,7 +24,7 @@ function checkresultPM(){
                 count += 1
                 document.getElementById("count").innetHTML = count;
             }else if (result != rand_num1 + rand_num2){
-                document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
+                document.getElementById("board").innerHTML = "Nepareizi!";
                 count += 1
                 document.getElementById("count").innetHTML = count;
             }
