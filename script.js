@@ -1,9 +1,10 @@
 const max = 100;
 const min = 1;
-var rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
-var rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
+
 
 function rndPM() {
+    var rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
+    var rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
     if (Math.random()> 0.5){
         document.getElementById("char").innerHTML = "+";
     }else{
@@ -16,6 +17,7 @@ function rndPM() {
 function checkresultPM(){
     var result = document.getElementById("result").value;
     var char = document.getElementById("char").innerHTML;
+    
     var count = 0
     if (result != ""){
         if (char == "+"){
@@ -48,6 +50,7 @@ function checkresultPM(){
 //----------------------------------------------------------------------------------------------->
 const max_one = 50;
 const min_one = 0;
+
 function isfloat (n){
     return n % 1 === 0;
 }
