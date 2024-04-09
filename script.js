@@ -28,7 +28,7 @@ function checkresultPM(){
                 document.getElementById("count").innerHTML = "Mēģinājumi: " + count;
                 setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
                 setTimeout(()=> { document.getElementById("count").innerHTML = "0" } ,3000);
-                setTimeout(()=> { document.getElementById("answer").innerHTML = "..." } ,3000);
+                setTimeout(()=> { document.getElementById("answer").value = "" } ,3000);
                 rndPM()
             }else if (result != rand_num1 + rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi!";
@@ -36,6 +36,9 @@ function checkresultPM(){
                 document.getElementById("count").innerHTML = "Mēģinājumi" + count;
                 if (count >10){
                     document.getElementById("board").innerHTML = "Mēģinājumu skaits beizdās!";
+                    setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
+                    setTimeout(()=> { document.getElementById("count").innerHTML = "0" } ,3000);
+                    setTimeout(()=> { document.getElementById("answer").value = "" } ,3000);
                     rndPM()
                 }
             }
