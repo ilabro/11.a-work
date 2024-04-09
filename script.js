@@ -33,7 +33,7 @@ function checkresultPM(){
             }else if (result != rand_num1 + rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi!";
                 count += 1;
-                document.getElementById("count").innerHTML = "Mēģinājumi" + count;
+                document.getElementById("count").innerHTML = "Mēģinājumi:" + count;
                 if (count >10){
                     document.getElementById("board").innerHTML = "Mēģinājumu skaits beizdās!";
                     setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
@@ -46,12 +46,12 @@ function checkresultPM(){
             if (result == rand_num1 - rand_num2){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
                 count += 1;
-                document.getElementById("count").innerHTML = "Mēģinājumi" + count;
+                document.getElementById("count").innerHTML = "Mēģinājumi:" + count;
                 rndPM()
             }else if (result != rand_num1 - rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
                 count += 1;
-                document.getElementById("count").innerHTML = "Mēģinājumi" + count;
+                document.getElementById("count").innerHTML = "Mēģinājumi:" + count;
                 if (count >10){
                     document.getElementById("board").innerHTML = "Mēģinājumu skaits beizdās!";
                     rndPM()
