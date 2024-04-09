@@ -25,7 +25,10 @@ function checkresultPM(){
             if (result == rand_num1 + rand_num2){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
                 count += 1;
-                document.getElementById("count").innerHTML = "Mēģinājumi" + count;
+                document.getElementById("count").innerHTML = "Mēģinājumi: " + count;
+                setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
+                setTimeout(()=> { document.getElementById("count").innerHTML = "0" } ,3000);
+                setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
                 rndPM()
             }else if (result != rand_num1 + rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi!";
