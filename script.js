@@ -3,8 +3,8 @@ const min = 1;
 
 
 function rndPM() {
-    window.value rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
-    window.value rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
+    window.rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
+    window.rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
     if (Math.random()> 0.5){
         document.getElementById("char").innerHTML = "+";
     }else{
@@ -55,8 +55,8 @@ function isfloat (n){
     return n % 1 === 0;
 }
 function rndMD() {
-    window.value rand_num_one = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
-    window.value rand_num_two = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
+    window.rand_num_one = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
+    window.rand_num_two = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
 
     while (rand_num_one * rand_num_two){
     if (Math.random()> 0.5){
