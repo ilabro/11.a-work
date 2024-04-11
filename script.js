@@ -29,7 +29,7 @@ function checkresultPM(){
                 setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
                 setTimeout(()=> { document.getElementById("count").innerHTML = "0" } ,3000);
                 setTimeout(()=> { document.getElementById("answer").value = "" } ,3000);
-                rndPM();
+                rndPM()
                 document.getElementById("result").innerHTML = "...";
             }else if (result != rand_num1 + rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi!";
