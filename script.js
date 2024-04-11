@@ -1,7 +1,6 @@
 const max = 100;
 const min = 1;
 
-
 function rndPM() {
     window.rand_num1 = Math.floor(Math.random() * (max - min + 1) + min);
     window.rand_num2 = Math.floor(Math.random() * (max - min + 1) + min);
@@ -13,7 +12,6 @@ function rndPM() {
     document.getElementById("first").innerHTML = rand_num1;
     document.getElementById("second").innerHTML = rand_num2;
 }
-
 
 function checkresultPM(){
     var count = 0
@@ -28,9 +26,9 @@ function checkresultPM(){
                 document.getElementById("count").innerHTML = "Mēģinājumi: " + count;
                 setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
                 setTimeout(()=> { document.getElementById("count").innerHTML = "0" } ,3000);
-                setTimeout(()=> { document.getElementById("answer").value = "" } ,3000);
+                setTimeout(()=> { document.getElementById("result").value = "" } ,3000);
                 rndPM()
-                document.getElementById("result").innerHTML = "...";
+
             }else if (result != rand_num1 + rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi!";
                 count += 1;
@@ -39,7 +37,7 @@ function checkresultPM(){
                     document.getElementById("board").innerHTML = "Mēģinājumu skaits beizdās!";
                     setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
                     setTimeout(()=> { document.getElementById("count").innerHTML = "0" } ,3000);
-                    setTimeout(()=> { document.getElementById("answer").value = "" } ,3000);
+                    setTimeout(()=> { document.getElementById("result").value = "" } ,3000);
                     rndPM()
                 }
             }
@@ -48,11 +46,18 @@ function checkresultPM(){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
                 count += 1;
                 document.getElementById("count").innerHTML = "Mēģinājumi:" + count;
+                setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
+                setTimeout(()=> { document.getElementById("count").innerHTML = "0" } ,3000);
+                setTimeout(()=> { document.getElementById("result").value = "" } ,3000);
                 rndPM()
             }else if (result != rand_num1 - rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
                 count += 1;
                 document.getElementById("count").innerHTML = "Mēģinājumi:" + count;
+                setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
+                setTimeout(()=> { document.getElementById("count").innerHTML = "0" } ,3000);
+                setTimeout(()=> { document.getElementById("result").value = "" } ,3000);
+                rndPM()
                 if (count >10){
                     document.getElementById("board").innerHTML = "Mēģinājumu skaits beizdās!";
                     rndPM()
