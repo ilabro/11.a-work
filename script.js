@@ -50,9 +50,6 @@ function checkresultPM(){
 const max_one = 50;
 const min_one = 1;
 
-function isfloat (n){
-    return n % 1 === 0;
-}
 function rndMD() {
     window.rand_num_one = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
     window.rand_num_two = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
