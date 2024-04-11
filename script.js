@@ -82,10 +82,10 @@ function checkresultMD(){
                 cleanMD()
             }
         }else if (char == "÷"){
-            if (result == rand_num1 / rand_num2){
+            if (result == Math.round(rand_num1 / rand_num2)){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
                 cleanMD()
-            }else if (result != rand_num1 / rand_num2){
+            }else if (result != Math.round(rand_num1 / rand_num2)){
                 document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
                 cleanMD()
             }
