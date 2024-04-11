@@ -30,6 +30,7 @@ function checkresultPM(){
                 clean()
             }else if (result != rand_num1 + rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi!";
+                clean()
             }
         }else if (char == "-"){
             if (result == rand_num1 - rand_num2){
@@ -76,14 +77,18 @@ function checkresultMD(){
         if (char == "x"){
             if (result == rand_num_one * rand_num_two){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
+                clean()
             }else if (result != rand_num_one * rand_num_two){
                 document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
+                clean()
             }
         }else if (char == "÷"){
             if (result == rand_num_one / rand_num_two){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
+                clean()
             }else if (result != rand_num_one / rand_num_two){
                 document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs";
+                clean()
             }
         }
     }else {
