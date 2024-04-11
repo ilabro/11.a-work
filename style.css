@@ -74,14 +74,11 @@ button:hover {
 }
 
 #board_two {
-  height: 100px;
-  width: 200px;
+  height: 00px;
+  width: 300px;
   background-color: gray;
   color: white;
   font-size: 35px;
   font-family: Arial;
   text-align: center;
-}
-#explain{
-  size : 20px;
 }
