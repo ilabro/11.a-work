@@ -47,7 +47,7 @@ function checkresultPM(){
 }
 
 //----------------------------------------------------------------------------------------------->
-const max_one = 50;
+const max_one = 20;
 const min_one = 1;
 
 function rndMD() {
