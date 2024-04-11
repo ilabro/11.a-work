@@ -1,7 +1,7 @@
 const max = 100;
 const min = 1;
 
-function clean (){
+function cleanPM (){
     setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
     setTimeout(()=> { document.getElementById("result").value = "" } ,3000);
     setTimeout(()=> { rndPM() } ,3000);
@@ -27,18 +27,18 @@ function checkresultPM(){
         if (char == "+"){
             if (result == rand_num1 + rand_num2){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
-                clean()
+                cleanPM()
             }else if (result != rand_num1 + rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi!";
-                clean()
+                cleanPM()
             }
         }else if (char == "-"){
             if (result == rand_num1 - rand_num2){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
-                clean()
+                cleanPM()
             }else if (result != rand_num1 - rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
-                clean()
+                cleanPM()
             }
         }
     }else {
@@ -49,6 +49,12 @@ function checkresultPM(){
 //----------------------------------------------------------------------------------------------->
 const max_one = 20;
 const min_one = 1;
+
+function cleanMD (){
+    setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
+    setTimeout(()=> { document.getElementById("result").value = "" } ,3000);
+    setTimeout(()=> { rndMD() } ,3000);
+}
 
 function rndMD() {
     window.rand_num1 = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
@@ -67,21 +73,21 @@ function checkresultMD(){
     var char = document.getElementById("char").innerHTML;
     
     if (result != ""){
-        if (char == "+"){
+        if (char == "×"){
             if (result == rand_num1 * rand_num2){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
-                clean()
+                cleanMD()
             }else if (result != rand_num1 * rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi!";
-                clean()
+                cleanMD()
             }
-        }else if (char == "-"){
+        }else if (char == "÷"){
             if (result == rand_num1 / rand_num2){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
-                clean()
+                cleanMD()
             }else if (result != rand_num1 / rand_num2){
                 document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
-                clean()
+                cleanMD()
             }
         }
     }else {
