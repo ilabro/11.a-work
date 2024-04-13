@@ -64,6 +64,13 @@
     width: 10%;
     font-size: 15px;
   }
+  
+  #result{
+    height: 100%;
+    width: 20%;
+    font-size: 15px;
+  }
+
 
   #board {
     height: 200px;
