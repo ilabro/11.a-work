@@ -50,11 +50,7 @@ function checkresultPM(){
 const max_one = 20;
 const min_one = 1;
 
-function cleanMD (){
-    setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
-    setTimeout(()=> { document.getElementById("result").value = "" } ,3000);
-    setTimeout(()=> { rndMD() } ,3000);
-}
+
 
 function rndMD() {
     window.rand_num1 = Math.floor(Math.random() * (max_one - min_one + 1) + min_one);
@@ -66,6 +62,12 @@ function rndMD() {
     }
     document.getElementById("first").innerHTML = rand_num1;
     document.getElementById("second").innerHTML = rand_num2;
+}
+
+function cleanMD (){
+    setTimeout(()=> { document.getElementById("board").innerHTML = "" } ,3000);
+    setTimeout(()=> { document.getElementById("result").value = "" } ,3000);
+    setTimeout(()=> { rndMD() } ,3000);
 }
 
 function checkresultMD(){
@@ -86,7 +88,7 @@ function checkresultMD(){
                 document.getElementById("board").innerHTML = "Malacis, pareizi!";
                 cleanMD()
             }else if (result != Math.round(rand_num1 / rand_num2)){
-                document.getElementById("board").innerHTML = "Nepareizi vai atbiles lauks ir tukšs.";
+                document.getElementById("board").innerHTML = "Nepareizi.";
                 cleanMD()
             }
         }
