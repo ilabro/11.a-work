@@ -99,7 +99,7 @@ function checkresultMD(){
 
 //----------------------------------------------------------------------------------------------->
 
-function uzd_output (){
+function uzd_output3 (){
     let third_grade = [
         {teksts:"Viens kilograms svaigu dārzeņu maksā 2 eiro, bet 1 kg saldētu dārzeņu maksā 2 reizes dārgāk. Saimniece nopirka 5 kg katra veida dārzeņu. Cik saimniece samaksāja kopā?",atbilde:"30 eiro"},
         {teksts:"Skolas virtuvei pieveda 100 kg dārzeņu. 44 kg no tiem bija gurķi, bet pārējie bija tomāti. Tomāti bija sasvērti vienādi 7 kastēs. Cik kilogra- mu tomātu bija katrā kastē?",atbilde:"8 katrā kastē"},
