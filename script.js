@@ -107,7 +107,11 @@ function uzd_output3 (){
         {teksts:"Pirmajā un otrajā klasē katrā ir 23 skolēni. Trešajā un ceturtajā klasē katrā ir 26 skolēni. Cik skolēnu ir kopā?",atbilde:"98 skolēni kopā"}
     ]
     let izvads = document.getElementById("uzd");
-    let uzdevums = third_grade[Math.random() * (third_grade.length - 0) + 0];
+    let index = Math.random() * (third_grade.length - 0) + 0;
+    console.log(index);
+    let uzdevums = third_grade[index];
+    console.log(uzdevums);
+
     izvads.innerHTML = uzdevums.teksts;
     
 }
