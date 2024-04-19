@@ -60,10 +60,10 @@
       let izvads = document.getElementById("uzd");
       document.getElementById("mervienibas").innerHTML = uzdevums3klase.mervieniba;
       izvads.innerHTML = uzdevums3klase.teksts;
-      var atbildes = document.getElementById("atb").value;
+      var atbildes = document.getElementById("atb");
       function parbaudit(){
           console.log(uzdevums3klase.atbilde);
-          if atbildes == uzdevums3klase.atbilde{
+          if atbildes.value == uzdevums3klase.atbilde{
             document.getElmentById("out").innerHTML = "Malacis, parezia atbilde!";
           }
       }  
