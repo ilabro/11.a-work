@@ -20,6 +20,30 @@
         <a class="navbar-brand" href="/index.html">Uzdevumu ceļvedis</a>
       </div>
     </nav>
+
+     <script>
+      let fourth_grade = [
+          {teksts:"Tūrisma firma pasūtīja 5 vienādas aviobiļetes ģimenei. Firma samaksāja 584 €. Cik cilvēku brauks ceļojumā?",atbilde:5 ,mervieniba:"cilvēki"},
+          {teksts:"4 ceļazīmes maksā 492 €. Cik eiro jāmaksā par 12 ceļazīmēm?",atbilde:"1476 ", mervieniba:"eiro"},
+          {teksts:"Šī gada novembrī, gatavojot jogurtus, strādnieks darba dienā paredzēja pārstrādāt 27 kg ogu, bet katru dienu viņš pārstrādāja 32 kg ogu. Par cik kilogramiem ogu mēneša laikā tika pārstrādāts vairāk nekā bija paredzēts?",atbilde:"150", mervieniba:"kg"}
+      ];
+      var uzd4_atbildes_index = Math.floor(Math.random() * (fourth_grade.length - 0) + 0);
+      var uzdevums4klase = fourth_grade[uzd4_atbildes_index];
+      let izvads = document.getElementById("uzd");
+      document.getElementById("mervienibas").innerHTML = uzdevums4klase.mervieniba;
+      izvads.innerHTML = uzdevums4klase.teksts;
+      var atbildes = document.getElementById("atb");
+      function parbaudit(){
+          console.log(uzdevums4klase.atbilde);
+          if (atbildes.value == uzdevums4klase.atbilde){
+            document.getElmentById("out").innerHTML = "Malacis, parezia atbilde!";
+          }else if (atbildes.value != uzdevums4klase.atbilde){
+            document.getElementById("out").innerHTML = "Nepareiza atbilde!";
+          }else{
+            document.getElementById("out").innerHTML = "Atildes lauks ir tukšs!";
+          }
+      }
+    </script>
     
     <script src="/script.js"></script>
   </body>
