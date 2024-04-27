@@ -61,6 +61,30 @@
     </div>
   </div>
 
+  <script>
+    let sixth_grade = [
+        {teksts:"Anna ar velosipēdu brauc no Rīgas uz Neretu. Viņas vidējais brauk- šanas ātrums ir 24 km/h, tāpēc viņai ceļā jāpavada 5 stundas. Cik ilgā laikā šo attālumu ar velosipēdu var veikt Reinis, ja viņa vidējais braukšanas ātrums ir 30 km/h?",atbilde:"4" ,mervieniba:"stundas"},
+        {teksts:"Jānim ir 4 1/2 l sulas. Cik glāzes, kuru tilpums ir 1/4 l, viņš var piepildīt?",atbilde:"18", mervieniba:"glāzes"},
+        {teksts:"Zemes virsmas laukums ir 510 miljardi km². Apmēram 7/10 no Zemes virsmas klāj okeāni. Cik km² lielu Zemes virsmu klāj okeāni?",atbilde:"357", mervieniba:"milrd km²"}
+    ];
+    var uzd6_atbildes_index = Math.floor(Math.random() * (sixth_grade.length - 0) + 0);
+    var uzdevums6klase = fifth_grade[uzd6_atbildes_index];
+    let izvads = document.getElementById("uzd");
+    document.getElementById("mervienibas").innerHTML = uzdevums6klase.mervieniba;
+    izvads.innerHTML = uzdevums6klase.teksts;
+    var atbildes = document.getElementById("atb");
+    function parbaudit(){
+        console.log(uzdevums6klase.atbilde);
+        if (atbildes.value == uzdevums6klase.atbilde){
+          document.getElementById("out").innerHTML = "Malacis, parezia atbilde!";
+        }else if (atbildes.value == ""){
+          document.getElementById("out").innerHTML = "Atildes lauks ir tukšs!";
+        }else if (atbildes.value != uzdevums6klase.atbilde){
+          document.getElementById("out").innerHTML = "Nepareiza atbilde!";
+        }
+    }
+  </script>
+
     <script src="/script.js"></script>
 
   </body>
