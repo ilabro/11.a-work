@@ -48,7 +48,7 @@
       </div>
       
       <div class="col">
-        <button id="answer" onclick="parbaudit()" style=" margin-top:10px; font-size:20px; width: 150px; height: 60px; background-color: yellowgreen;">Atbildēt</button>
+        <button id="answer"  type="number" onclick="parbaudit()" style=" margin-top:10px; font-size:20px; width: 150px; height: 60px; background-color: yellowgreen;">Atbildēt</button>
       </div>
       </div>
       <div class="col container-fluid d-flex align-items-center justify-content-center">
@@ -61,7 +61,31 @@
     </div>
   </div>
 
-    <script src="/script.js"></script>
-    
+  <script>
+    let fifth_grade = [
+        {teksts:"Skolā ir 860 skolēnu, no tiem 470 ir meitenes.Cik reizes meiteņu ir vairāk nekā zēnu?",atbilde:"1.2" ,mervieniba:"reizes"},
+        {teksts:"Daudzdzīvokļu mājā kopā ir 240 dzīvokļi. 85 ir divistabu dzīvokļi, bet vienistabas dzīvokļu ir par 25 vairāk. Vēl šajā mājā ir trīsistabu dzīvokļi. Cik trīsistabu dzīvokļu ir šajā mājā?",atbilde:"145", mervieniba:"dzīvokļi"},
+        {teksts:"Kristaps un Kurts kolekcionē nozīmītes par hokeja tēmu. Krista- pam ir par 13 nozīmītēm vairāk nekā Kurtam. Abiem kopā ir 1257 nozīmītes. Cik nozīmīšu ir Kristapam ?",atbilde:"635", mervieniba:"nozīmītes"}
+    ];
+    var uzd5_atbildes_index = Math.floor(Math.random() * (fifth_grade.length - 0) + 0);
+    var uzdevums5klase = fifth_grade[uzd3_atbildes_index];
+    let izvads = document.getElementById("uzd");
+    document.getElementById("mervienibas").innerHTML = uzdevums5klase.mervieniba;
+    izvads.innerHTML = uzdevums5klase.teksts;
+    var atbildes = document.getElementById("atb");
+    function parbaudit(){
+        console.log(uzdevums5klase.atbilde);
+        if (atbildes.value == uzdevums5klase.atbilde){
+          document.getElementById("out").innerHTML = "Malacis, parezia atbilde!";
+        }else if (atbildes.value == ""){
+          document.getElementById("out").innerHTML = "Atildes lauks ir tukšs!";
+        }else if (atbildes.value != uzdevums5klase.atbilde){
+          document.getElementById("out").innerHTML = "Nepareiza atbilde!";
+        }
+    }
+  </script>
+
+  <script src="/script.js"></script>
+
   </body>
 </html>
