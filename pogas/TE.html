@@ -82,10 +82,7 @@
         {teksts:"Jānim ir 4 1/2 l sulas. Cik glāzes, kuru tilpums ir 1/4 l, viņš var piepildīt?",atbilde:"18", mervieniba:"glāzes"},
         {teksts:"Zemes virsmas laukums ir 510 miljardi km². Apmēram 7/10 no Zemes virsmas klāj okeāni. Cik km² lielu Zemes virsmu klāj okeāni?",atbilde:"357", mervieniba:"milrd km²"}
         ];
-
-        
-            
-        
+        let questions = [third_grade, fourth_grade, fifth_grade, sixth_grade];
         var questions_index = Math.floor(Math.random() * (questions.length - 0) + 0);
         var question_gen = questions[questions_index];
         var uzdevums3klase = third_grade[uzd3_atbildes_index];
@@ -104,7 +101,7 @@
             }
         }
 
-        let questions = [third_grade, fourth_grade, fifth_grade, sixth_grade]
+         
         for (i in questions){
             console.log(i[questions_index]["teksts"])
         }
