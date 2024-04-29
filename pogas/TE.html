@@ -75,15 +75,16 @@
         ];
 
         let jautajumu_indexi = [];
-
+    
         do {
             var questions_index = Math.floor(Math.random() * (jautajumi.length - 0) + 0);
             if(!jautajumu_indexi.includes(questions_index)) jautajumu_indexi.push(questions_index);
         } while (jautajumu_indexi.length < 10);
+
         num_index=0
         for (j in jautajumu_indexi){
             console.log(jautajumi[j]);
-            document.getElementById(num_index).innerHTML=jautajumi[j]
+            document.getElementById(num_index).innerHTML=jautajumi[j].teksts
             num_index += 1
         }
         console.log(jautajumu_indexi);
