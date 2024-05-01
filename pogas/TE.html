@@ -95,8 +95,9 @@
                         </div>
                         </li>
 
-                        <button onclick="user_input_array()" style="border-radius:10px; margin-top:20px; width:100px; height:40px; font-size:15px; background-color:rgb(23, 59, 126); color:white;">ASdWad</button>
-                    </ul>                   
+                        <button onclick="user_input_array()" style="border-radius:10px; margin-top:20px; width:100px; height:40px; font-size:15px; background-color:rgb(23, 59, 126); color:white;">Pārbaudīt</button>
+                    </ul> 
+                    <label id="score" style="float: right; margin-right:50px; font-size: 50px;"></label>                  
                 </div>
             </div>
         </div>
@@ -137,16 +138,19 @@
         user_input_id = 0
         function user_input_array (){
             var user_inputs = []
+            var user_score =0
             for (let i = 1; i < 11; i++){
                 user_inputs.push(document.getElementById(`atb${i}`).value)
             }
             for(i in atbildes){
-            if (atbildes[i]==user_inputs[i]){
-                console.log(atbildes[i],"true")
-            }else{
-                console.log(atbildes[i],"flase",user_inputs[i])
+                if (atbildes[i]==user_inputs[i]){
+                    console.log(atbildes[i],"true")
+                    user_score += 1
+                }else{
+                    console.log(atbildes[i],"flase",user_inputs[i])
+                }
             }
-        }
+            document.getElementById("score").innerHTML = `${user_score}/10 Pareizi`
         }
         
         </script>
