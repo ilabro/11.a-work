@@ -1,3 +1,7 @@
+function goBack() {
+  window.history.back();
+}
+
 const max = 100;
 const min = 1;
 
